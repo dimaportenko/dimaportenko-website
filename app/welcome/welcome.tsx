@@ -12,15 +12,9 @@ export function Welcome() {
           <div className="text-xl md:text-2xl font-mono text-muted-foreground h-16 md:h-24">
             <TypeAnimation
               sequence={[
-                "I love to code.",
+                "I love to code, learn, and share.",
                 1000,
-                "I love to learn.",
-                1000,
-                "I love to share.",
-                1000,
-                "I build web applications.",
-                1000,
-                "I solve complex problems.",
+                "I build mobile apps, websites, tools, and more.",
                 1000,
               ]}
               wrapper="span"
