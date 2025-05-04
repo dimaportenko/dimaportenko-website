@@ -1,9 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
+import { FloatingProfile } from "@/components/floating-profile";
 
 export function Welcome() {
   return (
-    <main className="container mx-auto px-4 py-24 md:py-32 max-w-4xl">
-      <div className="flex flex-col items-start space-y-8">
+    <main className="container mx-auto px-4 py-24 md:py-32 max-w-5xl">
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             <span className="block">Hi, I'm Dima Portenko.</span>
@@ -24,6 +25,10 @@ export function Welcome() {
             />
             <span className="inline-block animate-blink">_</span>
           </div>
+        </div>
+
+        <div className="max-md:order-first max-md:mx-auto px-4">
+          <FloatingProfile />
         </div>
       </div>
     </main>
