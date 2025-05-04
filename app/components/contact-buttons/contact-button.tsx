@@ -1,5 +1,5 @@
-import { Link } from "react-router";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router"
+import { Button } from "@/components/ui/button"
 
 export function ContactButton({ href, name }: { href: string; name: string }) {
   return (
@@ -21,5 +21,5 @@ export function ContactButton({ href, name }: { href: string; name: string }) {
         />
       </Link>
     </Button>
-  );
+  )
 }

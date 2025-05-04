@@ -14,3 +14,6 @@
 # VSCode
 .vscode/tasks.json
 .react-router/
+
+# build
+./build/

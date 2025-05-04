@@ -1,10 +1,10 @@
-import { env } from "cloudflare:workers";
-import { createCookieSessionStorage } from "react-router";
-import { createThemeSessionResolver } from "remix-themes";
+import { env } from "cloudflare:workers"
+import { createCookieSessionStorage } from "react-router"
+import { createThemeSessionResolver } from "remix-themes"
 
 // You can default to 'development' if process.env.NODE_ENV is not set
-const isProduction = process.env.NODE_ENV === "production";
-const themeSecret = env.COLOR_SCHEME_SECRET;
+const isProduction = process.env.NODE_ENV === "production"
+const themeSecret = env.COLOR_SCHEME_SECRET
 
 const sessionStorage = createCookieSessionStorage({
   cookie: {
@@ -18,6 +18,6 @@ const sessionStorage = createCookieSessionStorage({
       ? { domain: "dimaportenko.dvportenko.workers.dev", secure: true }
       : {}),
   },
-});
+})
 
-export const themeSessionResolver = createThemeSessionResolver(sessionStorage);
+export const themeSessionResolver = createThemeSessionResolver(sessionStorage)

@@ -1,5 +1,5 @@
-import { createThemeAction } from "remix-themes";
+import { createThemeAction } from "remix-themes"
 
-import { themeSessionResolver } from "@/modules/color-scheme/server";
+import { themeSessionResolver } from "@/modules/color-scheme/server"
 
-export const action = createThemeAction(themeSessionResolver);
+export const action = createThemeAction(themeSessionResolver)

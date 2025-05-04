@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.css"
 
 export function FloatingProfile() {
   return (
@@ -9,5 +9,5 @@ export function FloatingProfile() {
         className="w-[250px] h-[250px] object-cover"
       />
     </div>
-  );
+  )
 }

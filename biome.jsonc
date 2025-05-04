@@ -1,0 +1,20 @@
+{
+  "files": {
+    "ignore": [
+      "build/**",
+      ".react-router/**",
+      ".vscode/**",
+      ".git/**",
+      "worker-configuration.d.ts",
+      "app/app.css"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  }
+}

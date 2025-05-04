@@ -1,5 +1,5 @@
-import { ContactButton } from "./contact-button";
-import { LinkedInButton } from "./linkedin-button";
+import { ContactButton } from "./contact-button"
+import { LinkedInButton } from "./linkedin-button"
 
 const contactsData = [
   { href: "https://github.com/dimaportenko", name: "github" },
@@ -23,7 +23,7 @@ const contactsData = [
   },
   { href: "https://dev.to/dimaportenko", name: "devdotto" },
   { href: "https://www.twitch.tv/lost_semicolon", name: "twitch" },
-];
+]
 
 export function ContactButtons() {
   return (
@@ -37,5 +37,5 @@ export function ContactButtons() {
       ))}
       <LinkedInButton />
     </div>
-  );
+  )
 }

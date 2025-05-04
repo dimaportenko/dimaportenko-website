@@ -1,5 +1,5 @@
-import { Header } from "@/components/header";
-import { Outlet } from "react-router";
+import { Header } from "@/components/header"
+import { Outlet } from "react-router"
 
 export default function MainLayout() {
   return (
@@ -7,5 +7,5 @@ export default function MainLayout() {
       <Header />
       <Outlet />
     </div>
-  );
+  )
 }

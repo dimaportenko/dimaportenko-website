@@ -1,6 +1,6 @@
-import { TypeAnimation } from "react-type-animation";
-import { FloatingProfile } from "@/components/floating-profile";
-import { ContactButtons } from "@/components/contact-buttons";
+import { TypeAnimation } from "react-type-animation"
+import { FloatingProfile } from "@/components/floating-profile"
+import { ContactButtons } from "@/components/contact-buttons"
 
 export function Welcome() {
   return (
@@ -37,5 +37,5 @@ export function Welcome() {
         </div>
       </div>
     </main>
-  );
+  )
 }
