@@ -22,6 +22,9 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme(null)}>
+          System
+        </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme(Theme.LIGHT)}>
           Light
         </DropdownMenuItem>
