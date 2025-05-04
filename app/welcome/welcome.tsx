@@ -4,7 +4,7 @@ import { ContactButtons } from "@/components/contact-buttons";
 
 export function Welcome() {
   return (
-    <main className="container mx-auto px-4 py-24 md:py-32 max-w-5xl">
+    <main className="container mx-auto px-4 py-8 md:py-32 max-w-5xl">
       <div className="flex-1 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8">
         <div className="flex flex-col space-y-4 max-md:space-y-10 justify-between">
           <div className="space-y-4">

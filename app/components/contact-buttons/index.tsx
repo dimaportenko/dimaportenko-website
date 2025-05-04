@@ -1,34 +1,41 @@
 import { ContactButton } from "./contact-button";
 import { LinkedInButton } from "./linkedin-button";
 
+const contactsData = [
+  { href: "https://github.com/dimaportenko", name: "github" },
+  {
+    href: "https://bsky.app/profile/dimaportenko.bsky.social",
+    name: "bluesky",
+  },
+  {
+    href: "https://www.upwork.com/freelancers/~019a1afcd3f56e9469",
+    name: "upwork",
+  },
+  { href: "mailto:dvportenko@gmail.com", name: "gmail" },
+  {
+    href: "https://www.youtube.com/channel/UCReKeeIMZywvQoaZPZKzQbQ/",
+    name: "youtube",
+  },
+  { href: "https://twitter.com/dimaportenko", name: "x" },
+  {
+    href: "https://stackoverflow.com/users/923497/dima-portenko",
+    name: "stackoverflow",
+  },
+  { href: "https://dev.to/dimaportenko", name: "devdotto" },
+  { href: "https://www.twitch.tv/lost_semicolon", name: "twitch" },
+];
+
 export function ContactButtons() {
   return (
     <div className="flex flex-wrap gap-4">
-      <ContactButton href="https://github.com/dimaportenko" name="github" />
-      <ContactButton
-        href="https://bsky.app/profile/dimaportenko.bsky.social"
-        name="bluesky"
-      />
-      <ContactButton
-        href="https://www.upwork.com/freelancers/~019a1afcd3f56e9469"
-        name="upwork"
-      />
-      <ContactButton href="mailto:dvportenko@gmail.com" name="gmail" />
-      <ContactButton
-        href="https://www.youtube.com/channel/UCReKeeIMZywvQoaZPZKzQbQ/"
-        name="youtube"
-      />
+      {contactsData.map((contact) => (
+        <ContactButton
+          key={contact.name}
+          href={contact.href}
+          name={contact.name}
+        />
+      ))}
       <LinkedInButton />
-      <ContactButton href="https://twitter.com/dimaportenko" name="x" />
-      <ContactButton
-        href="https://stackoverflow.com/users/923497/dima-portenko"
-        name="stackoverflow"
-      />
-      <ContactButton href="https://dev.to/dimaportenko" name="devdotto" />
-      <ContactButton
-        href="https://www.twitch.tv/lost_semicolon"
-        name="twitch"
-      />
     </div>
   );
 }
