@@ -6,7 +6,8 @@
       ".vscode/**",
       ".git/**",
       "worker-configuration.d.ts",
-      "app/app.css"
+      "app/app.css",
+      ".wrangler/**"
     ]
   },
   "formatter": {
