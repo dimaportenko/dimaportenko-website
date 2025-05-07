@@ -23,6 +23,7 @@ const contactsData = [
   },
   { href: "https://dev.to/dimaportenko", name: "devdotto" },
   { href: "https://www.twitch.tv/lost_semicolon", name: "twitch" },
+  { href: "https://www.reddit.com/user/Puzzleheaded_Cheek26", name: "reddit" },
 ]
 
 export function ContactButtons() {
